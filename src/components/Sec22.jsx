@@ -64,9 +64,9 @@ const Sec22 = (props) => {
         I always want to Challenge myself . I have a positive mindset . And I
         don't give up until I acheive it .
       </p>
-      <p className="about-me">
+      {/*  <p className="about-me">
         I make websites which give best user experiance .
-      </p>
+      </p>*/}
       <div className={lw1}>
         <div className="corner_line"></div>
         <div className="bottom_line"></div>

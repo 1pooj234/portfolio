@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import CV from "../assets/Pooms.png";
+import CV from "../assets/Pooms.jpg";
 import "./Sec5.css";
 const Sec5 = () => {
   const emailRef = useRef();

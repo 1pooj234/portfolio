@@ -102,11 +102,12 @@
 
 .about-me {
   font-size: 18.5px;
-  margin-top: -15px;
+  margin-top: 15px;
 }
 
 .list {
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .btext {

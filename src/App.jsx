@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowFn();
-    }, 1000);
+    }, 3000);
     window.addEventListener("scroll", getY);
     return () => {
       clearTimeout(setShowFn);
