@@ -1,0 +1,382 @@
+.sec4 {
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+.project_cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-name {
+  margin-bottom: 50px;
+}
+
+.project-text {
+  margin-left: 40px;
+}
+.project-text::first-letter {
+  font-size: 40px;
+  text-shadow: 2px 2px rgba(255, 68, 0, 0.473);
+  color: rgb(255, 0, 255);
+}
+
+.images_sec {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image_holder {
+  margin-bottom: 40px;
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.image {
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.first-one {
+  /* background: url("/src/assets/blogs-img.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 1px -10px;
+}
+
+.type1 {
+  transform: rotateX(0) translateY(0) rotateZ(0);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.type2 {
+  transform: rotateX(0) translateY(0) rotateZ(0);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.type3 {
+  transform: rotateX(0) translateY(0) rotateZ(0);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.type4 {
+  transform: rotateX(0) translateY(0) rotateZ(0);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.image-box1 {
+  transform: rotateX(0) translateY(0) translateX(0) rotateZ(0deg);
+  transition: all 0.3s ease;
+}
+
+.image-box1:hover {
+  transform: rotateX(45deg) translateY(-15px) translateX(65px) rotateZ(30deg);
+  transition: all 0.3s ease;
+}
+
+.image-box1:hover .type1 {
+  transform: translateY(85px) translateX(35px);
+  opacity: 0.4;
+  transition: all 0.3s ease 0.3s;
+}
+
+.image-box1:hover .type2 {
+  transform: translateY(65px) translateX(25px);
+  opacity: 0.6;
+  transition: all 0.3s ease 0.2s;
+}
+.image-box1:hover .type3 {
+  transform: translateY(45px) translateX(15px);
+  opacity: 0.8;
+  transition: all 0.3s ease 0.1s;
+}
+.image-box1:hover .type4 {
+  transform: translateY(25px);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.side-image {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  z-index: inherit;
+}
+
+.side1 {
+  transform: translateX(-500%);
+  transition: all 1s ease-in;
+}
+.side2 {
+  transform: translateX(500%);
+  transition: all 1s ease-in;
+}
+
+.app-link:hover ~ .side1 {
+  transform: translateX(-105%) rotateY(45deg) rotateX(30deg);
+  transition: all 1s ease-out;
+}
+.app-link:hover ~ .side2 {
+  transform: translateX(85%) rotateY(45deg) rotateX(30deg);
+  transition: all 1s ease-out;
+}
+
+.second-one {
+  /* background: url("/src/assets/user-management.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 1px -10px;
+}
+
+.type5 {
+  transform: translateX(0);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+.type6 {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+.type7 {
+  transform: translateX(0);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+.type8 {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.image-box2:hover .type5 {
+  transform: translateX(25px);
+  transition: all 0.3s ease;
+  opacity: 0.4;
+}
+.image-box2:hover .type6 {
+  transform: translateY(25px);
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+.image-box2:hover .type7 {
+  transform: translateX(-25px);
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+.image-box2:hover .type8 {
+  transform: translateY(-25px);
+  transition: all 0.3s ease;
+}
+
+.side3 {
+  transform: translateX(-500%);
+  transition: all 0.5s ease-in;
+}
+.side4 {
+  transform: translateX(500%);
+  transition: all 0.5s ease-in;
+}
+
+.app-link:hover ~ .side3 {
+  transform: translateX(-115%) translateY(25px);
+  transition: all 0.5s ease-out;
+}
+.app-link:hover ~ .side4 {
+  transform: translateX(85%) translateY(-25px);
+  transition: all 0.5s ease-out;
+}
+
+.third-one {
+  /* background: url("/src/assets/tshirt-store-img.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 1px -10px;
+}
+
+.image-box3 {
+  transform-style: preserve-3d;
+}
+
+.type9 {
+  pointer-events: none;
+  transform: translateX(-300px) scale(0.5) translateY(-300px) rotateZ(45deg)
+    rotateY(75deg);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.type10 {
+  pointer-events: none;
+  transform: translateX(-300px) scale(0.5) translateY(-300px) rotateZ(45deg)
+    rotateY(75deg);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.type11 {
+  pointer-events: none;
+  transform: translateX(-300px) scale(0.5) translateY(-300px) rotateZ(45deg)
+    rotateY(75deg);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.type12 {
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.image-box3:hover .type9 {
+  transform: translateZ(-5px) translateX(10px) scale(1) rotateZ(0deg)
+    rotateY(0deg);
+  transition: all 0.3s ease 0.5s;
+  opacity: 0.2;
+}
+.image-box3:hover .type10 {
+  transform: translateZ(-3px) translateX(5px) scale(1) rotateZ(0deg)
+    rotateY(0deg);
+  transition: all 0.3s ease 0.3s;
+  opacity: 0.4;
+}
+.image-box3:hover .type11 {
+  transform: translateZ(-2px) translateX(-5px) scale(1) rotateZ(0deg)
+    rotateY(0deg);
+  transition: all 0.3s ease 0.1s;
+  opacity: 0.6;
+}
+.image-box3:hover .type12 {
+  transform: translateX(-15px);
+  transition: all 0.3s ease;
+}
+
+.side5 {
+  transform: translateX(-500%);
+  transition: all 1s ease-in;
+}
+.side6 {
+  transform: translateX(500%);
+  transition: all 1s ease-in;
+}
+
+.app-link:hover ~ .side5 {
+  transform: translateX(-105%);
+  transition: all 1s ease-out;
+}
+.app-link:hover ~ .side6 {
+  transform: translateX(80%);
+  transition: all 1s ease-out;
+}
+
+.side5 {
+  transform: translateX(-500%);
+  transition: all 1s ease-in;
+}
+.side6 {
+  transform: translateX(500%);
+  transition: all 1s ease-in;
+}
+.side7 {
+  transform: translateX(-500%);
+  transition: all 1s ease-in;
+}
+.side8 {
+  transform: translateX(500%);
+  transition: all 1s ease-in;
+}
+
+.app-link:hover ~ .side7 {
+  transform: translateX(-105%) rotateZ(15deg);
+  transition: all 1s ease-out;
+}
+.app-link:hover ~ .side8 {
+  transform: translateX(80%) rotateZ(-15deg);
+  transition: all 1s ease-out;
+}
+
+.fourth-one {
+  /* background: url("/src/assets/travel-app-img.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 1px -8px;
+}
+
+.type13 {
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+}
+.type14 {
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+}
+.type15 {
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+}
+.type16 {
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+}
+
+.image-box3:hover .type13 {
+  transform: translateX(-60px);
+  transition: all 0.3s ease;
+  opacity: 0.3;
+}
+.image-box3:hover .type14 {
+  transform: translateX(-40px);
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+.image-box3:hover .type15 {
+  transform: translateX(-20px);
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+.image-box3:hover .type16 {
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+}
+
+.clp1 {
+  position: absolute;
+  z-index: -1;
+  width: 2px;
+  height: 100%;
+  background: -webkit-linear-gradient(top, gold, rgb(0, 51, 255));
+  left: 20%;
+}
+.clp2 {
+  position: absolute;
+  z-index: -1;
+  width: 2px;
+  height: 100%;
+  background: -webkit-linear-gradient(top, gold, rgb(0, 51, 255));
+  left: 50%;
+}
+.clp3 {
+  position: absolute;
+  z-index: -1;
+  width: 2px;
+  height: 100%;
+  background: -webkit-linear-gradient(top, gold, rgb(0, 51, 255));
+  right: 20%;
+}
+
+@media screen and (min-width: 900px) {
+  .project_cover:nth-of-type(1) {
+    margin-left: 10%;
+    justify-content: flex-start;
+  }
+  .project_cover:nth-of-type(3) {
+    margin-right: 10%;
+    justify-content: flex-end;
+  }
+}
