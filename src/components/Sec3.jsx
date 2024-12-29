@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Sec3.css";
+import Cube from "../ui/Cube";
 let firstTime = true;
 const Sec3 = () => {
   const [yoffset, setYoffset] = useState(0);
@@ -64,6 +65,7 @@ const Sec3 = () => {
           <div className="main-box1">
             <div className="hori">
               <div className={sb1Class}>
+                <Cube outlineColor="blue" />
                 <h3>JavaScript</h3>
               </div>
             </div>
@@ -71,6 +73,7 @@ const Sec3 = () => {
             <div className="slant-block type1 sbr"></div> */}
             <div className="hori">
               <div className={sb1Class}>
+                <Cube outlineColor="blue" />
                 <div>
                   <h3 className="speh">Wire</h3>
                   <h3 className="speh">Framing</h3>
@@ -81,11 +84,13 @@ const Sec3 = () => {
             <div className="slant-block type2 sbr"></div> */}
             <div className="hori">
               <div className={sb1Class}>
+                <Cube outlineColor="blue" />
                 <h3>HTML</h3>
               </div>
             </div>
             <div className="hori">
               <div className={sb2Class}>
+                <Cube outlineColor="blue" />
                 <h3 className="speh">Git-version</h3>
                 <h3 className="speh">Control</h3>
               </div>
@@ -100,18 +105,27 @@ const Sec3 = () => {
           }}
         >
           <div className="levels-ver">
-            <p>Beginner</p>
+            <p>Beginner </p>
             <p>Intermediate</p>
             <p>Advance</p>
           </div>
           <div className="ver">
-            <div className={drop1Class}>React</div>
+            <div className={drop1Class}>
+              <Cube />
+              React
+            </div>
           </div>
           <div className="ver">
-            <div className={drop1Class}>Redux</div>
+            <div className={drop1Class}>
+              <Cube />
+              Redux
+            </div>
           </div>
           <div className="ver">
-            <div className={drop1Class}>CSS</div>
+            <div className={drop1Class}>
+              <Cube />
+              CSS
+            </div>
           </div>
         </div>
       </div>
