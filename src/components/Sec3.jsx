@@ -65,7 +65,11 @@ const Sec3 = () => {
           <div className="main-box1">
             <div className="hori">
               <div className={sb1Class}>
-                <Cube outlineColor="blue" />
+                <Cube
+                  outlineColor="rgba(102, 255, 0, 0.98)"
+                  onlyOne={false}
+                  classRotate="c3"
+                />
                 <h3>JavaScript</h3>
               </div>
             </div>
@@ -73,7 +77,11 @@ const Sec3 = () => {
             <div className="slant-block type1 sbr"></div> */}
             <div className="hori">
               <div className={sb1Class}>
-                <Cube outlineColor="blue" />
+                <Cube
+                  outlineColor="rgba(251, 255, 0, 0.98)"
+                  onlyOne={false}
+                  classRotate="c4"
+                />
                 <div>
                   <h3 className="speh">Wire</h3>
                   <h3 className="speh">Framing</h3>
@@ -84,13 +92,23 @@ const Sec3 = () => {
             <div className="slant-block type2 sbr"></div> */}
             <div className="hori">
               <div className={sb1Class}>
-                <Cube outlineColor="blue" />
+                <Cube
+                  outlineColor="rgba(102, 255, 0, 0.98)"
+                  onlyOne={false}
+                  classRotate="c3"
+                />
+
                 <h3>HTML</h3>
               </div>
             </div>
             <div className="hori">
               <div className={sb2Class}>
-                <Cube outlineColor="blue" />
+                <Cube
+                  outlineColor="rgba(251, 255, 0, 0.98)"
+                  onlyOne={false}
+                  classRotate="c4"
+                />
+
                 <h3 className="speh">Git-version</h3>
                 <h3 className="speh">Control</h3>
               </div>
@@ -111,19 +129,19 @@ const Sec3 = () => {
           </div>
           <div className="ver">
             <div className={drop1Class}>
-              <Cube />
+              <Cube onlyOne={false} />
               React
             </div>
           </div>
           <div className="ver">
             <div className={drop1Class}>
-              <Cube />
+              <Cube onlyOne={false} classRotate="c4" />
               Redux
             </div>
           </div>
           <div className="ver">
             <div className={drop1Class}>
-              <Cube />
+              <Cube onlyOne={false} />
               CSS
             </div>
           </div>

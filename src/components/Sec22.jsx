@@ -6,6 +6,8 @@ let firstTime3 = true;
 let firstTime4 = true;
 const Sec22 = (props) => {
   const [y, setY] = useState(0);
+  const date = new Date();
+  const getAge = date.getFullYear() - 2004;
   const scrollDownEvent = () => {
     setY(window.scrollY);
     if (firstTime1) {
@@ -76,7 +78,7 @@ const Sec22 = (props) => {
             <b className="btext">DOB</b> : 02-05-2004
           </li>
           <li>
-            <b className="btext">Age</b> : 18 years
+            <b className="btext">Age</b> : {getAge} years
           </li>
           <li>
             <b className="btext">Gender</b> : Male
